@@ -70,7 +70,41 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      @media (max-width: 768px) {
+        .botones-container {
+          flex-direction: column;
+          align-items: center;
+        }
+    
+        .botones-container a {
+          width: 80%;
+          padding: 10px;
+          font-size: 1rem;
+          text-align: center;
+        }
+    
+        img[alt="Logo TEC"],
+        img[alt="Logo ITMA II"] {
+          width: 120px !important;
+          top: 10% !important;
+        }
+    
+        img[alt="Logo TEC"] {
+          left: 10% !important;
+          transform: translate(0, 0) !important;
+        }
+    
+        img[alt="Logo ITMA II"] {
+          right: 10% !important;
+          transform: translate(0, 0) !important;
+        }
+    
+        h3 {
+          font-size: 1.3rem;
+        }
     }
+  }
+    
   </style>
 </head>
 <body>
